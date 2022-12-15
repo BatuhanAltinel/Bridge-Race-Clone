@@ -1,0 +1,282 @@
+fileFormatVersion: 2
+guid: af0b1ab7b5498403d9d82bcfc9318e94
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cartoonish.073
+    100002: Cartoonish.074
+    100004: foot.L
+    100006: foot.L 1
+    100008: foot.R
+    100010: foot.R 1
+    100012: forearm.L
+    100014: forearm.L 1
+    100016: forearm.R
+    100018: forearm.R 1
+    100020: hand.L
+    100022: hand.L 1
+    100024: hand.L.001
+    100026: hand.L.001 1
+    100028: hand.L.002
+    100030: hand.L.002 1
+    100032: hand.L.003
+    100034: hand.L.003 1
+    100036: hand.L.004
+    100038: hand.L.004 1
+    100040: hand.L.005
+    100042: hand.L.005 1
+    100044: hand.L.006
+    100046: hand.L.006 1
+    100048: hand.L.007
+    100050: hand.L.007 1
+    100052: hand.L.008
+    100054: hand.L.008 1
+    100056: hand.L.009
+    100058: hand.L.009 1
+    100060: hand.L.010
+    100062: hand.L.010 1
+    100064: hand.R
+    100066: hand.R 1
+    100068: hand.R.001
+    100070: hand.R.001 1
+    100072: hand.R.002
+    100074: hand.R.002 1
+    100076: hand.R.003
+    100078: hand.R.003 1
+    100080: hand.R.004
+    100082: hand.R.004 1
+    100084: hand.R.005
+    100086: hand.R.005 1
+    100088: hand.R.006
+    100090: hand.R.006 1
+    100092: hand.R.007
+    100094: hand.R.007 1
+    100096: hand.R.008
+    100098: hand.R.008 1
+    100100: hand.R.009
+    100102: hand.R.009 1
+    100104: hand.R.010
+    100106: hand.R.010 1
+    100108: metarig.080
+    100110: metarig.081
+    100112: shin.L
+    100114: shin.L 1
+    100116: shin.R
+    100118: shin.R 1
+    100120: shoulder.L
+    100122: shoulder.L 1
+    100124: shoulder.R
+    100126: shoulder.R 1
+    100128: spine
+    100130: spine 1
+    100132: spine.001
+    100134: spine.001 1
+    100136: spine.002
+    100138: spine.002 1
+    100140: spine.003
+    100142: spine.003 1
+    100144: spine.005
+    100146: spine.005 1
+    100148: spine.006
+    100150: spine.006 1
+    100152: //RootNode
+    100154: thigh.L
+    100156: thigh.L 1
+    100158: thigh.R
+    100160: thigh.R 1
+    100162: toe.L
+    100164: toe.L 1
+    100166: toe.R
+    100168: toe.R 1
+    100170: upper_arm.L
+    100172: upper_arm.L 1
+    100174: upper_arm.R
+    100176: upper_arm.R 1
+    100178: Cartoonish.054
+    100180: metarig.061
+    400000: Cartoonish.073
+    400002: Cartoonish.074
+    400004: foot.L
+    400006: foot.L 1
+    400008: foot.R
+    400010: foot.R 1
+    400012: forearm.L
+    400014: forearm.L 1
+    400016: forearm.R
+    400018: forearm.R 1
+    400020: hand.L
+    400022: hand.L 1
+    400024: hand.L.001
+    400026: hand.L.001 1
+    400028: hand.L.002
+    400030: hand.L.002 1
+    400032: hand.L.003
+    400034: hand.L.003 1
+    400036: hand.L.004
+    400038: hand.L.004 1
+    400040: hand.L.005
+    400042: hand.L.005 1
+    400044: hand.L.006
+    400046: hand.L.006 1
+    400048: hand.L.007
+    400050: hand.L.007 1
+    400052: hand.L.008
+    400054: hand.L.008 1
+    400056: hand.L.009
+    400058: hand.L.009 1
+    400060: hand.L.010
+    400062: hand.L.010 1
+    400064: hand.R
+    400066: hand.R 1
+    400068: hand.R.001
+    400070: hand.R.001 1
+    400072: hand.R.002
+    400074: hand.R.002 1
+    400076: hand.R.003
+    400078: hand.R.003 1
+    400080: hand.R.004
+    400082: hand.R.004 1
+    400084: hand.R.005
+    400086: hand.R.005 1
+    400088: hand.R.006
+    400090: hand.R.006 1
+    400092: hand.R.007
+    400094: hand.R.007 1
+    400096: hand.R.008
+    400098: hand.R.008 1
+    400100: hand.R.009
+    400102: hand.R.009 1
+    400104: hand.R.010
+    400106: hand.R.010 1
+    400108: metarig.080
+    400110: metarig.081
+    400112: shin.L
+    400114: shin.L 1
+    400116: shin.R
+    400118: shin.R 1
+    400120: shoulder.L
+    400122: shoulder.L 1
+    400124: shoulder.R
+    400126: shoulder.R 1
+    400128: spine
+    400130: spine 1
+    400132: spine.001
+    400134: spine.001 1
+    400136: spine.002
+    400138: spine.002 1
+    400140: spine.003
+    400142: spine.003 1
+    400144: spine.005
+    400146: spine.005 1
+    400148: spine.006
+    400150: spine.006 1
+    400152: //RootNode
+    400154: thigh.L
+    400156: thigh.L 1
+    400158: thigh.R
+    400160: thigh.R 1
+    400162: toe.L
+    400164: toe.L 1
+    400166: toe.R
+    400168: toe.R 1
+    400170: upper_arm.L
+    400172: upper_arm.L 1
+    400174: upper_arm.R
+    400176: upper_arm.R 1
+    400178: Cartoonish.054
+    400180: metarig.061
+    2100000: Material.004
+    2100002: Material.014
+    4300000: Cartoonish.074
+    4300002: Cartoonish.073
+    4300004: Cartoonish.054
+    9500000: //RootNode
+    13700000: Cartoonish.073
+    13700002: Cartoonish.074
+    13700004: Cartoonish.054
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: 96a10411b4a4645b2a73759512c090b7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cartoonish.042
+    100002: foot.L
+    100004: foot.R
+    100006: forearm.L
+    100008: forearm.R
+    100010: hand.L
+    100012: hand.L.001
+    100014: hand.L.002
+    100016: hand.L.003
+    100018: hand.L.004
+    100020: hand.L.005
+    100022: hand.L.006
+    100024: hand.L.007
+    100026: hand.L.008
+    100028: hand.L.009
+    100030: hand.L.010
+    100032: hand.R
+    100034: hand.R.001
+    100036: hand.R.002
+    100038: hand.R.003
+    100040: hand.R.004
+    100042: hand.R.005
+    100044: hand.R.006
+    100046: hand.R.007
+    100048: hand.R.008
+    100050: hand.R.009
+    100052: hand.R.010
+    100054: metarig.049
+    100056: shin.L
+    100058: shin.R
+    100060: shoulder.L
+    100062: shoulder.R
+    100064: spine
+    100066: spine.001
+    100068: spine.002
+    100070: spine.003
+    100072: spine.005
+    100074: spine.006
+    100076: //RootNode
+    100078: thigh.L
+    100080: thigh.R
+    100082: toe.L
+    100084: toe.R
+    100086: upper_arm.L
+    100088: upper_arm.R
+    100090: Cartoonish.041
+    100092: metarig.048
+    400000: Cartoonish.042
+    400002: foot.L
+    400004: foot.R
+    400006: forearm.L
+    400008: forearm.R
+    400010: hand.L
+    400012: hand.L.001
+    400014: hand.L.002
+    400016: hand.L.003
+    400018: hand.L.004
+    400020: hand.L.005
+    400022: hand.L.006
+    400024: hand.L.007
+    400026: hand.L.008
+    400028: hand.L.009
+    400030: hand.L.010
+    400032: hand.R
+    400034: hand.R.001
+    400036: hand.R.002
+    400038: hand.R.003
+    400040: hand.R.004
+    400042: hand.R.005
+    400044: hand.R.006
+    400046: hand.R.007
+    400048: hand.R.008
+    400050: hand.R.009
+    400052: hand.R.010
+    400054: metarig.049
+    400056: shin.L
+    400058: shin.R
+    400060: shoulder.L
+    400062: shoulder.R
+    400064: spine
+    400066: spine.001
+    400068: spine.002
+    400070: spine.003
+    400072: spine.005
+    400074: spine.006
+    400076: //RootNode
+    400078: thigh.L
+    400080: thigh.R
+    400082: toe.L
+    400084: toe.R
+    400086: upper_arm.L
+    400088: upper_arm.R
+    400090: Cartoonish.041
+    400092: metarig.048
+    2100000: Material.004
+    4300000: Cartoonish.042
+    4300002: Cartoonish.041
+    9500000: //RootNode
+    13700000: Cartoonish.042
+    13700002: Cartoonish.041
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
