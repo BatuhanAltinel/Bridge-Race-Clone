@@ -8,7 +8,7 @@ public class AnimatorManager : MonoBehaviour
 {
     Animator anim ;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         anim = GetComponent<Animator>();
     }
