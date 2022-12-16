@@ -16,9 +16,11 @@ public class AnimatorManager : MonoBehaviour
     public void PlayWalkAnim()
     {
         anim.Play("Walk");
+        // anim.SetBool("IsWalk",true);
     }
     public void PLayeIdleAnim()
     {
         anim.Play("Idle");
+        // anim.SetBool("IsWalk",false);
     }
 }

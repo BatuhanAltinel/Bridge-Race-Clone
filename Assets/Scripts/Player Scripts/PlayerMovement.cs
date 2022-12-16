@@ -16,10 +16,10 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody _rigidbody;
 
     private Vector3 _moveVector;
-
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        animatorManager = GetComponent<AnimatorManager>();
     }
 
     private void FixedUpdate()
