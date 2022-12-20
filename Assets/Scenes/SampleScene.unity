@@ -778,7 +778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1694070888, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: timeToMove
-      value: 0.8
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1694070888, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: stackHolder
