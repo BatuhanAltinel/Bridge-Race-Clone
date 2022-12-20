@@ -7,15 +7,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private FloatingJoystick _joystick;
-
-    [SerializeField] private AnimatorManager animatorManager;
-
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _rotateSpeed;
 
-    private Rigidbody _rigidbody;
-
-    private Vector3 _moveVector;
+    Rigidbody _rigidbody;
+    AnimatorManager animatorManager;
+    Vector3 _moveVector;
+    
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();

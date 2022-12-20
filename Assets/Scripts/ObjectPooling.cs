@@ -52,7 +52,7 @@ public class ObjectPooling : MonoBehaviour
         return null;
     }
 
-    List<Vector3> PossiblePositions()
+    void PossiblePositions()
     {
         for (int i = 0; i < zBorder; i++)
         {
@@ -66,7 +66,6 @@ public class ObjectPooling : MonoBehaviour
             maxX = 13;
         }
         Debug.Log("Possible positions count " + possiblePositions.Count);
-        return possiblePositions;
     }
 
     Vector3 GetRandomPosition()
@@ -86,11 +85,10 @@ public class ObjectPooling : MonoBehaviour
                 GameObject brick = GetBrickFromPool();
                 brick.SetActive(true);
                 brick.transform.position = GetRandomPosition();
-                // brick.GetComponent<Brick>().InitPosition(GetRandomPosition().x,GetRandomPosition().z);
+                // brick.GetComponent<Brick>().GroundPosition(GetRandomPosition());
                 bricksQueue.Dequeue();
             }
         }
     }
-     
-    
+
 }

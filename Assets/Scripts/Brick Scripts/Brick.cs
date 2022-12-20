@@ -5,29 +5,50 @@ using UnityEngine;
 public class Brick : MonoBehaviour
 {
     ColorEnum colorEnum;
-    float xIndex;
-    float zIndex;
-    // Start is called before the first frame update
-    void Start()
+    public GameObject stackPoint;
+    bool isReached;
+    void Awake()
     {
         colorEnum = GetComponent<ColorEnum>();
+        stackPoint = GameObject.Find("Stack Point");
     }
 
-    public void InitPosition(float x, float z)
+    public void GroundPosition(Vector3 pos)
     {
-       xIndex = x;
-       zIndex = z;
+       transform.position = pos;
     }
-    void OnTriggerEnter(Collider other)
+
+    public void BrickMove(Transform destination,float timeToMove)
     {
-        if(other.gameObject.TryGetComponent<ColorEnum>(out colorEnum) && gameObject.TryGetComponent<ColorEnum>(out colorEnum))
+        StartCoroutine(BrickMoveRoutine(destination,timeToMove));
+    }
+     
+    IEnumerator BrickMoveRoutine(Transform destination,float timeToMove)
+    {
+        float elapsedTime = 0;
+        isReached = false;
+
+        while(!isReached)
         {
-            if(this.colorEnum.colorType == other.GetComponent<ColorEnum>().colorType)
+            if(Vector3.Distance(transform.position,destination.position) <0.1f)
             {
-                Debug.Log("Colors matched Color name :" + colorEnum.colorType);
-                gameObject.SetActive(false);
+                isReached = true;
+                transform.position = destination.position;
+                transform.parent = destination;
+                transform.localRotation = Quaternion.identity;
+                transform.localPosition = Vector3.zero;
             }
+
+            elapsedTime += Time.deltaTime;
+
+            float t = Mathf.Clamp(elapsedTime/timeToMove,0,1);
+
+            transform.position = Vector3.Lerp(transform.position,destination.position,t);
+            yield return new WaitForEndOfFrame();
         }
+
+        
         
     }
+    
 }

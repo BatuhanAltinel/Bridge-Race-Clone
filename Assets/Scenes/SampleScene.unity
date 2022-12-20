@@ -382,7 +382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1694070880}
   offSet: {x: 0, y: 10, z: -10}
-  _followSpeed: 4.3
+  _followSpeed: 5
 --- !u!1 &1009536813
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,6 +760,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1785161109 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 69255947, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
+  m_PrefabInstance: {fileID: 656892456132191525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &656892456132191525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -767,14 +772,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 69255947, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
+      propertyPath: m_Name
+      value: Stack Holder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694070888, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
+      propertyPath: timeToMove
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694070888, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
+      propertyPath: stackHolder
+      value: 
+      objectReference: {fileID: 1785161109}
     - target: {fileID: 656892455063268967, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: _joystick
       value: 
       objectReference: {fileID: 900559085}
-    - target: {fileID: 656892455063268967, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
-      propertyPath: animatorManager
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 656892455531725157, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: m_Name
       value: Player
