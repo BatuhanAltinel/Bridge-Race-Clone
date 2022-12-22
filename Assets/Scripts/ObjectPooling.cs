@@ -7,19 +7,21 @@ public class ObjectPooling : MonoBehaviour
 
     private Queue bricksQueue = new();
     public GameObject[] Bricks;
-    int amountOfObject;
+    public int amountOfObject;
     private GameObject brickInstantiate;
 
     List<Vector3> possiblePositions = new();
     int maxX = 13;
     int maxZ = 14;
+    float yAxis;
+    float yBrickOffset = 0.2f;
 
     public int xBorder = 10;
     public int zBorder = 15;
 
     void Start()
     {
-        amountOfObject = (xBorder*zBorder) / Bricks.Length;
+        yAxis = transform.position.y;
         FirstBricksSpawn();
         PossiblePositions();
         SetBricksPositions();
@@ -58,14 +60,14 @@ public class ObjectPooling : MonoBehaviour
         {
             for (int j = 0; j < xBorder; j++)
             {
-                Vector3 newPos = new Vector3(maxX,0.2f,maxZ);
+                Vector3 newPos = new Vector3(maxX,yAxis+yBrickOffset,maxZ);
                 possiblePositions.Add(newPos);
                 maxX -= 3;
             }
             maxZ -=2;
             maxX = 13;
         }
-        Debug.Log("Possible positions count " + possiblePositions.Count);
+        
     }
 
     Vector3 GetRandomPosition()
@@ -85,7 +87,7 @@ public class ObjectPooling : MonoBehaviour
                 GameObject brick = GetBrickFromPool();
                 brick.SetActive(true);
                 brick.transform.position = GetRandomPosition();
-                // brick.GetComponent<Brick>().GroundPosition(GetRandomPosition());
+                brick.GetComponent<Brick>().GroundPosition(brick.transform.position);
                 bricksQueue.Dequeue();
             }
         }

@@ -5,67 +5,55 @@ using UnityEngine;
 public class StackManager : MonoBehaviour
 {
     ColorEnum colorEnum;
-    public GameObject stackHolder;
-    Vector3 offset;
-    Transform currentPos;
-
+    public Transform stackHolder;
+    Vector3 lastBrickPos;
+    int brickIndex = 0;
     [SerializeField] float timeToMove = 1.5f;
-    List<GameObject> bricks = new();
-    // Start is called before the first frame update
+    public List<GameObject> bricks = new();
+
     void Start()
     {
-        offset = new Vector3(0,0.03f,0);
-        currentPos = stackHolder.transform;
+        
     }
     
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.TryGetComponent<ColorEnum>(out colorEnum) && gameObject.TryGetComponent<ColorEnum>(out colorEnum))
         {
-            if(this.colorEnum.colorType == other.GetComponent<ColorEnum>().colorType)
-            {
-                Debug.Log("Colors matched Color name :" + colorEnum.colorType);
-                bricks.Add(other.gameObject);
-                // StackBrick(other.gameObject);
-                    
-                if (bricks.Count == 1)
-                {
-                    currentPos.position = stackHolder.transform.position;
-                    other.GetComponent<Brick>().BrickMove(currentPos, timeToMove);
-                   
-                    currentPos.position += offset;
-                }
-                else if (bricks.Count > 1)
-                {
-                    Transform followTransform = currentPos;
-                    other.GetComponent<Brick>().BrickMove(followTransform, timeToMove);
-                    followTransform.position += offset;
-                }
-                
-    
+            Stacking(other);
 
-            }
+            // SPEED CAUSES THE ERROR
+            // HAVE TO FIX IT !!!!!!
+            
         }
     }
 
-    // private void StackBrick(GameObject other)
-    // {
-    //     if (bricks.Count >= 1)
-    //     {
-    //         other.GetComponent<Brick>().BrickMove(stackHolder.transform, timeToMove);
-    //         currentPos = stackHolder.transform;
-    //         currentPos.position += offset;
-    //     }
-    //     else if (bricks.Count > 1)
-    //     {
+    private void Stacking(Collider other)
+    {
+        if (this.colorEnum.colorType == other.GetComponent<ColorEnum>().colorType)
+        {
+            bricks.Add(other.gameObject);
+            other.gameObject.transform.parent = this.stackHolder.transform;
+            other.GetComponent<Brick>().BrickBouncing();
+            if (bricks.Count == 1)
+            {
+                lastBrickPos = this.stackHolder.transform.position;
+                other.GetComponent<Brick>().BrickMove(stackHolder,lastBrickPos, timeToMove,lastBrickPos.y);
+                
+            }
+            else if (bricks.Count > 1)
+            {
+                lastBrickPos = this.stackHolder.transform.position;
+                lastBrickPos.y += (bricks.Count-1) * 0.3f;
+                other.GetComponent<Brick>().BrickMove(stackHolder,lastBrickPos, timeToMove,lastBrickPos.y);
+                brickIndex++;
+            }
             
-    //         Transform followTransform = currentPos;
-    //         other.GetComponent<Brick>().BrickMove(followTransform, timeToMove);
-    //         followTransform.position += offset;
-    //     }
-    //     other.gameObject.transform.parent = stackHolder.transform;
-    //     other.transform.localRotation = Quaternion.identity;
-    //     other.transform.localPosition = Vector3.zero;
-    // }
+            
+            
+        }
+    }
+
+
 
 }
