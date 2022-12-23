@@ -11,11 +11,7 @@ public class StackManager : MonoBehaviour
     [SerializeField] float timeToMove = 1.5f;
     [HideInInspector] public List<GameObject> bricks = new();
 
-    string myTag;
-    void Awake()
-    {
-        myTag = Tags.blueTag;
-    }
+    [SerializeField] string myTag;
     
     void OnTriggerEnter(Collider other)
     {
