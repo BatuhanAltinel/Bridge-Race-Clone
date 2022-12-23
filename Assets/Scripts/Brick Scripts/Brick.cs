@@ -4,19 +4,20 @@ using UnityEngine;
 using DG.Tweening;
 public class Brick : MonoBehaviour
 {
-    ColorEnum colorEnum;
     bool isReached;
     Vector3 spawnedPosition;
-    void Awake()
-    {
-        colorEnum = GetComponent<ColorEnum>();
-    }
 
     public void GroundPosition(Vector3 pos)
     {
        spawnedPosition = pos;
     }
 
+    public void BrickBouncing()
+    {
+        transform.DOScale(new Vector3(1.3f,0.5f,0.5f),0.2f).SetEase(Ease.InOutBounce).
+        OnComplete(() => transform.DOScale(new Vector3(1f,0.3f,0.3f),0.2f).SetEase(Ease.InOutBounce));
+        
+    }
     public void BrickMove(Transform parent,Vector3 destination,float timeToMove,float yPos)
     {
         StartCoroutine(BrickMoveRoutine(parent,destination,timeToMove,yPos));
@@ -29,7 +30,7 @@ public class Brick : MonoBehaviour
 
         while(!isReached)
         {
-            if(Vector3.Distance(transform.position,destination) <0.1f)
+            if(Vector3.Distance(transform.position,destination) < 0.5f)
             {
                 isReached = true;
                 transform.position = destination;
@@ -41,6 +42,8 @@ public class Brick : MonoBehaviour
             float t = Mathf.Clamp(elapsedTime/timeToMove,0,1);
 
             transform.position = Vector3.Lerp(transform.position,destination,t);
+            
+            // yield return null;
             yield return new WaitForEndOfFrame();
         }
     }
@@ -48,18 +51,10 @@ public class Brick : MonoBehaviour
 
     IEnumerator BrickChildPositioning(float timeToMove,Transform parent,float yPos)
     {
-        // yield return new WaitForEndOfFrame();
-        yield return null;
-        transform.parent = parent;
+        yield return new WaitForEndOfFrame();
         transform.localPosition = new Vector3(0,yPos,0);
         transform.localRotation = Quaternion.identity;
-        
     }
 
-    public void BrickBouncing()
-    {
-        transform.DOScale(new Vector3(0.8f,0.2f,0.2f),0.2f).SetEase(Ease.InOutBounce).
-        OnComplete(() => transform.DOScale(new Vector3(1f,0.3f,0.3f),0.2f).SetEase(Ease.InOutBounce));
-        
-    }
+    
 }

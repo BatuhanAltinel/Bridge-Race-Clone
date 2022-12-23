@@ -719,11 +719,6 @@ MonoBehaviour:
   amountOfObject: 50
   xBorder: 10
   zBorder: 15
---- !u!4 &666994458 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1780981355, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
-  m_PrefabInstance: {fileID: 656892456132191525}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,10 +1287,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1817,7 +1812,7 @@ MonoBehaviour:
   - {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
   - {fileID: 3617579752906563790, guid: d107255618ba25d45a7ee231905abd5f, type: 3}
   - {fileID: 5182639304135681202, guid: a892c7d8a37da20419a14ce0202b800a, type: 3}
-  amountOfObject: 50
+  amountOfObject: 30
   xBorder: 10
   zBorder: 15
 --- !u!1001 &1611169909
@@ -2430,19 +2425,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1694070888, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: timeToMove
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1694070888, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: firstStackPoint
       value: 
-      objectReference: {fileID: 666994458}
+      objectReference: {fileID: 0}
     - target: {fileID: 656892455063268967, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: _joystick
       value: 
       objectReference: {fileID: 900559085}
+    - target: {fileID: 656892455063268967, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
+      propertyPath: _moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 656892455063268967, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
+      propertyPath: _rotateSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 656892455063268973, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
+      propertyPath: colorType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 656892455531725157, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 656892455531725157, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 656892455531961669, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: m_RootOrder
@@ -2548,6 +2559,10 @@ PrefabInstance:
     - target: {fileID: 5460670817105419450, guid: 603f89835972d08448f71899def2caac, type: 3}
       propertyPath: m_Name
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460670817105419450, guid: 603f89835972d08448f71899def2caac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5460670817105419450, guid: 603f89835972d08448f71899def2caac, type: 3}
       propertyPath: m_TagString
