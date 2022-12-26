@@ -5,6 +5,7 @@ using UnityEngine;
 public class StackManager : MonoBehaviour
 {
     ColorEnum colorEnum;
+    Brick brickScript;
     public Transform stackHolder;
     Vector3 lastBrickPos;
     int brickIndex = 0;
@@ -15,52 +16,80 @@ public class StackManager : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(myTag))
-        {
+        // if (other.CompareTag(myTag))
+        // {
                 
-            bricks.Add(other.gameObject);
+            // bricks.Add(other.gameObject);
 
-            bricks[brickIndex].transform.parent = this.stackHolder.transform;
-            lastBrickPos = this.stackHolder.transform.position;
+            // bricks[brickIndex].transform.parent = this.stackHolder.transform;
+            // lastBrickPos = this.stackHolder.transform.position;
 
-            bricks[brickIndex].GetComponent<Brick>().BrickBouncing();
+            // bricks[brickIndex].GetComponent<Brick>().BrickBouncing();
 
-            lastBrickPos.y += (bricks.Count-1) * 0.3f;
-            bricks[brickIndex].GetComponent<Brick>().BrickMove(stackHolder,lastBrickPos, timeToMove,lastBrickPos.y);
+            // lastBrickPos.y += (bricks.Count-1) * 0.3f;
+            // bricks[brickIndex].GetComponent<Brick>().BrickMove(stackHolder,lastBrickPos, timeToMove,lastBrickPos.y);
             
-            brickIndex++;
-        }
+            // brickIndex++;
+            
+            GameObject brick = other.gameObject;
+            Stacking(brick);
+                
+        // }
     }
 
-    private void Stacking(Collider other)
+    private void Stacking(GameObject other)
     {
-        // other.gameObject.TryGetComponent<ColorEnum>(out colorEnum) && gameObject.TryGetComponent<ColorEnum>(out colorEnum)
-        // if (this.colorEnum.colorType == other.GetComponent<ColorEnum>().colorType)
-        //     {
-        //         bricks.Add(other.gameObject);
-        //         bricks[brickIndex].transform.parent = this.stackHolder.transform;
-        //         lastBrickPos = this.stackHolder.transform.position;
-        //         bricks[brickIndex].GetComponent<Brick>().BrickBouncing();
+        if(other.gameObject.TryGetComponent<ColorEnum>(out colorEnum) && gameObject.TryGetComponent<ColorEnum>(out colorEnum))
+        {
+            if (this.colorEnum.colorType == other.GetComponent<ColorEnum>().colorType)
+            {
+                // bricks.Add(other.gameObject);
+                // bricks[brickIndex].transform.parent = this.stackHolder.transform;
+                // lastBrickPos = this.stackHolder.transform.position;
+                // bricks[brickIndex].GetComponent<Brick>().BrickBouncing();
 
-        //         if (bricks.Count == 1)
-        //         {
-        //             bricks[brickIndex].GetComponent<Brick>().BrickMove(stackHolder,lastBrickPos, timeToMove,lastBrickPos.y);
-                    
-        //         }
-        //         else if (bricks.Count > 1)
-        //         {
-        //             lastBrickPos.y += (bricks.Count-1) * 0.3f;
-        //             bricks[brickIndex].GetComponent<Brick>().BrickMove(stackHolder,lastBrickPos, timeToMove,lastBrickPos.y);
-        //             brickIndex++;
-        //         }
+                // if (bricks.Count == 1)
+                // {
+                //     bricks[brickIndex].GetComponent<Brick>().BrickMove(stackHolder,lastBrickPos, timeToMove,lastBrickPos.y);
+                        
+                // }
+                // else if (bricks.Count > 1)
+                // {
+                //     lastBrickPos.y += (bricks.Count-1) * 0.3f;
+                //     bricks[brickIndex].GetComponent<Brick>().BrickMove(stackHolder,lastBrickPos, timeToMove,lastBrickPos.y);
+                //     brickIndex++;
+                // }
 
                 // lastBrickPos.y += (bricks.Count-1) * 0.3f;
                 // bricks[brickIndex].GetComponent<Brick>().BrickMove(stackHolder,lastBrickPos, timeToMove,lastBrickPos.y);
                 // brickIndex++;
 
+                bricks.Add(other.gameObject);
                 
-    }    
-    
+                if(bricks[brickIndex].TryGetComponent<Brick>(out brickScript))
+                {
+                    bricks[brickIndex].transform.parent = this.stackHolder.transform;
+                    lastBrickPos = this.stackHolder.transform.position;
+
+                    bricks[brickIndex].GetComponent<Brick>().BrickBouncing();
+
+                    lastBrickPos.y += (bricks.Count-1) * 0.3f;
+                    bricks[brickIndex].GetComponent<Brick>().BrickMove(stackHolder,lastBrickPos, timeToMove,lastBrickPos.y);
+                
+                    
+                }else
+                {
+                    brickIndex--;
+                    Debug.LogWarning("Brick instance is null error");
+                }
+                    
+                brickIndex++;
+                
+            }   
+        }    
+    }
+
+
 
 
 

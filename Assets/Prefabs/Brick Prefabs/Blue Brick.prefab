@@ -14,10 +14,9 @@ GameObject:
   - component: {fileID: 4368086326754704925}
   - component: {fileID: 4368086326754704930}
   - component: {fileID: 4368086326754704931}
-  - component: {fileID: 2896159281842552327}
   m_Layer: 0
   m_Name: Blue Brick
-  m_TagString: Blue
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,16 +125,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2f02385bed4b143a7ec17214e74c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &2896159281842552327
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4368086326754704924}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}

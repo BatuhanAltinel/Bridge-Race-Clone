@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 2837488215915665087}
   - component: {fileID: 2837488215915665086}
   - component: {fileID: 2837488215915665073}
-  - component: {fileID: 3786716697893758494}
+  - component: {fileID: 527651932}
   m_Layer: 0
   m_Name: Green Player
   m_TagString: Untagged
@@ -231,14 +231,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2837488215461499656}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9320f468934761043b204c16ff049af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _joystick: {fileID: 0}
-  _moveSpeed: 4
-  _rotateSpeed: 4
+  _moveSpeed: 5
+  _rotateSpeed: 5
 --- !u!114 &2837488215915665087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,19 +280,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorType: 2
---- !u!65 &3786716697893758494
-BoxCollider:
+--- !u!114 &527651932
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2837488215461499656}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 10, y: 0.2, z: 10}
-  m_Center: {x: 0, y: 0.1, z: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac71b9a3f766794ab3db9df7283be0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 5
+  _rotateSpeed: 20
 --- !u!1 &2837488215461499658
 GameObject:
   m_ObjectHideFlags: 0

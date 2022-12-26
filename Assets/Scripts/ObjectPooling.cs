@@ -60,7 +60,7 @@ public class ObjectPooling : MonoBehaviour
         {
             for (int j = 0; j < xBorder; j++)
             {
-                Vector3 newPos = new Vector3(maxX,yAxis+yBrickOffset,maxZ);
+                Vector3 newPos = new Vector3(maxX,yAxis+yBrickOffset,maxZ); // ground y position + brick y ofsett
                 possiblePositions.Add(newPos);
                 maxX -= 3;
             }
