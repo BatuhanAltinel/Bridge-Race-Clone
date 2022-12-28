@@ -6,13 +6,16 @@ public class StackManager : MonoBehaviour
 {
     ColorEnum colorEnum;
     Brick brickScript;
-    public Transform stackHolder;
+    public Transform playerStackHolder;
+    public Transform stairStackHolder;
     Vector3 lastBrickPos;
     int brickIndex = 0;
+    bool isParentStair = false;
+    public bool test = true;
+    public string myTag;
     [SerializeField] float timeToMove = 1.5f;
     [HideInInspector] public List<GameObject> bricks = new();
-
-    [SerializeField] string myTag;
+    [HideInInspector] public Stack<GameObject> BrickStacks = new();
     public float brickOffsetY = 0.3f;
     public float brickOffsetZ;
     
@@ -28,17 +31,19 @@ public class StackManager : MonoBehaviour
             if (this.colorEnum.colorType == other.GetComponent<ColorEnum>().colorType)
             {
                 bricks.Add(other.gameObject);
-                
+                BrickStacks.Push(other.gameObject);
+                if(!isParentStair)
+                    other.gameObject.transform.parent = this.playerStackHolder.transform;
                 if(other.gameObject.TryGetComponent<Brick>(out brickScript))
                 {
-                    other.gameObject.transform.parent = this.stackHolder.transform;
-                    lastBrickPos = this.stackHolder.transform.position;
-
+                    lastBrickPos = this.playerStackHolder.transform.position;
+                    // lastBrickPos = BrickStacks.Peek().transform.position;
                     other.gameObject.GetComponent<Brick>().BrickBouncing();
                     lastBrickPos.y += (bricks.Count-1) * brickOffsetY;
+                    // lastBrickPos.y += brickOffsetY;
 
                     other.gameObject.GetComponent<Brick>().MoveTo(lastBrickPos, timeToMove);
-                    
+                    // brickOffsetY += 0.3f;
                 }else
                 {
                     Debug.LogWarning("Brick instance is null error");
@@ -48,7 +53,34 @@ public class StackManager : MonoBehaviour
                 brickIndex++;
                 
             }   
-        }    
+        } 
+        if(other.gameObject.CompareTag("Stair"))
+        {
+            Debug.Log("brick count" + BrickStacks.Count);
+            isParentStair = true;
+            BrickStacks.Pop().transform.parent = null;
+            BrickStacks.Pop().transform.parent = this.stairStackHolder.transform;
+            lastBrickPos = this.stairStackHolder.transform.position;
+            BrickStacks.Pop().GetComponent<Brick>().BrickBouncing();
+            lastBrickPos.y += brickOffsetY;
+            BrickStacks.Pop().GetComponent<Brick>().MoveTo(lastBrickPos, timeToMove);
+        } 
+
+        if(other.gameObject.CompareTag("Test"))
+        {
+            if(test)
+            {
+                GameObject brick = BrickStacks.Peek();
+                brick.transform.parent = null;
+                Vector3 grpos =brick.GetComponent<Brick>().spawnedPosition;
+                brick.GetComponent<Brick>().MoveTo(grpos,timeToMove);
+                brick.GetComponent<Brick>().BrickBouncing();
+                BrickStacks.Pop();
+                test = false;
+            }
+            
+
+        }  
     }
 
 

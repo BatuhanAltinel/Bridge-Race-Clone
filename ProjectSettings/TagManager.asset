@@ -9,6 +9,7 @@ TagManager:
   - Green
   - Red
   - Wall
+  - Test
   layers:
   - Default
   - TransparentFX

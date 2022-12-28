@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5182639304135681165}
   m_Layer: 0
   m_Name: Red Brick
-  m_TagString: Untagged
+  m_TagString: Green
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,4 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2f02385bed4b143a7ec17214e74c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorEnum: {fileID: 5182639304135681164}
+  spawnedPosition: {x: 0, y: 0, z: 0}

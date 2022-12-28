@@ -5,7 +5,7 @@ using DG.Tweening;
 public class Brick : MonoBehaviour
 {
     // bool isReached;
-    Vector3 spawnedPosition;
+    public Vector3 spawnedPosition;
     public void GroundPosition(Vector3 pos)
     {
        spawnedPosition = pos;
@@ -24,6 +24,15 @@ public class Brick : MonoBehaviour
         .OnComplete(()=> StartCoroutine(BrickChildPositioning(timeToMove,dest.y)));
 
     }
+    
+    IEnumerator BrickChildPositioning(float timeToMove,float yPos)
+    {
+        yield return new WaitForEndOfFrame();
+        transform.localPosition = new Vector3(0,yPos,0);
+        transform.localRotation = Quaternion.identity;
+    }
+
+
     // public void BrickMove(Transform parent,Vector3 destination,float timeToMove,float yPos)
     // {
     //     StartCoroutine(BrickMoveRoutine(parent,destination,timeToMove,yPos));
@@ -53,14 +62,6 @@ public class Brick : MonoBehaviour
     //         yield return new WaitForEndOfFrame();
     //     }
     // }
-    
-
-    IEnumerator BrickChildPositioning(float timeToMove,float yPos)
-    {
-        yield return new WaitForEndOfFrame();
-        transform.localPosition = new Vector3(0,yPos,0);
-        transform.localRotation = Quaternion.identity;
-    }
 
     
 }

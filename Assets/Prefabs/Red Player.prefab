@@ -1,65 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1153319088
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1153319089}
-  - component: {fileID: 1153319091}
-  - component: {fileID: 1153319090}
-  m_Layer: 0
-  m_Name: Brick Detector
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1153319089
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153319088}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2382660903701666119}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1153319091
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153319088}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 10, y: 1, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1153319090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153319088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc8580d19e9ac5845b7d1a7021a7ae79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetBrick: {fileID: 0}
-  myTag: Red
 --- !u!1 &2382660903136907815
 GameObject:
   m_ObjectHideFlags: 0
@@ -70,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2382660903136907812}
   m_Layer: 0
-  m_Name: Stack Holder Green
+  m_Name: Stack Holder Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1182,7 +1122,6 @@ Transform:
   - {fileID: 2382660903701666129}
   - {fileID: 2382660903701666135}
   - {fileID: 2382660903136907812}
-  - {fileID: 1153319089}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1260,10 +1199,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837bd744b00b1484abfc4f2639052ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stackHolder: {fileID: 2382660903136907812}
+  playerStackHolder: {fileID: 0}
+  stairStackHolder: {fileID: 0}
   timeToMove: 0.3
   bricks: []
-  myTag: Red
+  brickOffsetY: 0.3
+  brickOffsetZ: 0
 --- !u!114 &212485715
 MonoBehaviour:
   m_ObjectHideFlags: 0
