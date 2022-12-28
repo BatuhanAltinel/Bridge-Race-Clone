@@ -4,9 +4,8 @@ using UnityEngine;
 using DG.Tweening;
 public class Brick : MonoBehaviour
 {
-    bool isReached;
+    // bool isReached;
     Vector3 spawnedPosition;
-
     public void GroundPosition(Vector3 pos)
     {
        spawnedPosition = pos;
@@ -18,38 +17,45 @@ public class Brick : MonoBehaviour
         OnComplete(() => transform.DOScale(new Vector3(1f,0.3f,0.3f),0.2f).SetEase(Ease.InOutBounce));
         
     }
-    public void BrickMove(Transform parent,Vector3 destination,float timeToMove,float yPos)
+
+    public void MoveTo(Vector3 dest,float timeToMove)
     {
-        StartCoroutine(BrickMoveRoutine(parent,destination,timeToMove,yPos));
+        transform.DOMove(dest,timeToMove)
+        .OnComplete(()=> StartCoroutine(BrickChildPositioning(timeToMove,dest.y)));
+
     }
+    // public void BrickMove(Transform parent,Vector3 destination,float timeToMove,float yPos)
+    // {
+    //     StartCoroutine(BrickMoveRoutine(parent,destination,timeToMove,yPos));
+    // }
      
-    IEnumerator BrickMoveRoutine(Transform parent,Vector3 destination,float timeToMove,float yPos)
-    {
-        float elapsedTime = 0;
-        isReached = false;
+    // IEnumerator BrickMoveRoutine(Transform parent,Vector3 destination,float timeToMove,float yPos)
+    // {
+    //     float elapsedTime = 0;
+    //     isReached = false;
 
-        while(!isReached)
-        {
-            if(Vector3.Distance(transform.position,destination) < 0.5f)
-            {
-                isReached = true;
-                transform.position = destination;
-                StartCoroutine(BrickChildPositioning(timeToMove,parent,yPos));
-            }
+    //     while(!isReached)
+    //     {
+    //         if(Vector3.Distance(transform.position,destination) < 0.5f)
+    //         {
+    //             isReached = true;
+    //             transform.position = destination;
+    //             StartCoroutine(BrickChildPositioning(timeToMove,yPos));
+    //         }
 
-            elapsedTime += Time.deltaTime;
+    //         elapsedTime += Time.deltaTime;
 
-            float t = Mathf.Clamp(elapsedTime/timeToMove,0,1);
+    //         float t = Mathf.Clamp(elapsedTime/timeToMove,0,1);
 
-            transform.position = Vector3.Lerp(transform.position,destination,t);
+    //         transform.position = Vector3.Lerp(transform.position,destination,t);
             
-            // yield return null;
-            yield return new WaitForEndOfFrame();
-        }
-    }
+    //         // yield return null;
+    //         yield return new WaitForEndOfFrame();
+    //     }
+    // }
     
 
-    IEnumerator BrickChildPositioning(float timeToMove,Transform parent,float yPos)
+    IEnumerator BrickChildPositioning(float timeToMove,float yPos)
     {
         yield return new WaitForEndOfFrame();
         transform.localPosition = new Vector3(0,yPos,0);

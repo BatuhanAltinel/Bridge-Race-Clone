@@ -14,7 +14,7 @@ public class CameraFollow : MonoBehaviour
     void Awake()
     {
         stackManager = playerTransform.gameObject.GetComponent<StackManager>();
-        offSet = new Vector3(0,13,-13);
+        offSet = new Vector3(0,15,-15);
     }
     private void LateUpdate() 
     {
@@ -33,9 +33,9 @@ public class CameraFollow : MonoBehaviour
         {
             offSet.y += 1;
             offSet.z -= 1;
-            offsetCount += 7;
+            offsetCount += 6;
 
-            if(offSet.y >= 17 || offSet.z <= -17)
+            if(offSet.y >= 19 || offSet.z <= -19)
             {
                 canCameraMove = false;
             }

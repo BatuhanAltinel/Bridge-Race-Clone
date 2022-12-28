@@ -11,7 +11,6 @@ public class ColorEnum : MonoBehaviour
         Green =2
     }
 
-    public ColorType colorType = ColorType.Blue;
-
+    public ColorType colorType;
 
 }

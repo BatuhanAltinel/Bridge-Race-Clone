@@ -426,15 +426,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -446,7 +450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.65
+      value: 0.4999996
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -478,33 +482,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
---- !u!1 &212485706 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2382660903702021479, guid: c3d65c9e12533624bb2daa6016f4f9ed, type: 3}
-  m_PrefabInstance: {fileID: 5834035849088420839}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &212485714 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2382660903701666119, guid: c3d65c9e12533624bb2daa6016f4f9ed, type: 3}
-  m_PrefabInstance: {fileID: 5834035849088420839}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &212485716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212485706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 743e551eceab9d74f9988540ae007584, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorType: 1
 --- !u!1 &232314116
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,15 +626,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_12
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -665,7 +650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.9499984
+      value: 3.7999988
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -697,7 +682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -751,15 +736,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_18
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -771,7 +760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.629998
+      value: 5.479997
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -803,7 +792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -812,15 +801,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -832,7 +825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.35
+      value: 0.20000038
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -864,7 +857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -873,15 +866,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_8
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -893,7 +890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.7599978
+      value: 2.6099982
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -925,7 +922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -979,15 +976,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_6
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -999,7 +1000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.1400006
+      value: 1.9900013
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1031,7 +1032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -1040,15 +1041,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_10
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1060,7 +1065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.3599977
+      value: 3.2099967
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1092,7 +1097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -1103,17 +1108,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 527651932, guid: ea2256e02b6ca5c45b6bc1129dd16e50, type: 3}
-      propertyPath: _rotateSpeed
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 2837488215461499656, guid: ea2256e02b6ca5c45b6bc1129dd16e50, type: 3}
       propertyPath: m_Name
       value: Green Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2837488215461499656, guid: ea2256e02b6ca5c45b6bc1129dd16e50, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2837488215461924648, guid: ea2256e02b6ca5c45b6bc1129dd16e50, type: 3}
       propertyPath: m_RootOrder
@@ -1159,18 +1156,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2837488215915665080, guid: ea2256e02b6ca5c45b6bc1129dd16e50, type: 3}
-      propertyPath: m_Constraints
-      value: 80
+    - target: {fileID: 2837488215915665086, guid: ea2256e02b6ca5c45b6bc1129dd16e50, type: 3}
+      propertyPath: timeToMove
+      value: 0.2
       objectReference: {fileID: 0}
-    - target: {fileID: 2837488215915665083, guid: ea2256e02b6ca5c45b6bc1129dd16e50, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2837488215915665084, guid: ea2256e02b6ca5c45b6bc1129dd16e50, type: 3}
-      propertyPath: _joystick
-      value: 
-      objectReference: {fileID: 900559085}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea2256e02b6ca5c45b6bc1129dd16e50, type: 3}
 --- !u!1 &570032249
@@ -1503,15 +1492,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_23
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1523,7 +1516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.119999
+      value: 6.969999
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1555,7 +1548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -1744,15 +1737,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_17
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1764,7 +1761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.3299985
+      value: 5.179998
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1796,7 +1793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -1911,15 +1908,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_7
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1931,7 +1932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.4400005
+      value: 2.2900004
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1963,7 +1964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -2012,11 +2013,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 1, z: 0.8}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &950980166 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5191943406349623113, guid: 603f89835972d08448f71899def2caac, type: 3}
-  m_PrefabInstance: {fileID: 5340238864770224279}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2122,15 +2118,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_22
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2142,7 +2142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.82
+      value: 6.6699996
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2174,7 +2174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -2183,15 +2183,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_9
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2203,7 +2207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.059998
+      value: 2.9099975
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2235,7 +2239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -2435,15 +2439,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_14
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2455,7 +2463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.55
+      value: 4.399999
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2487,7 +2495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -2541,15 +2549,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_3
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2561,7 +2573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.25
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2593,7 +2605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -2602,15 +2614,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_2
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2622,7 +2638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.95
+      value: 0.79999983
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2654,7 +2670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -2837,66 +2853,6 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.6, y: 1, z: 0.8}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1153319088
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1153319089}
-  - component: {fileID: 1153319091}
-  - component: {fileID: 1153319090}
-  m_Layer: 0
-  m_Name: Brick Detector
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1153319089
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153319088}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 212485714}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1153319090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153319088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc8580d19e9ac5845b7d1a7021a7ae79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetBrick: {fileID: 0}
-  myTag: Red
---- !u!65 &1153319091
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153319088}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 10, y: 1, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1170475394
 GameObject:
@@ -3083,15 +3039,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_19
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3103,7 +3063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.9299984
+      value: 5.7799983
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3135,7 +3095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -3274,6 +3234,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 1, z: 0.8}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1398872669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5460670817105419450, guid: 603f89835972d08448f71899def2caac, type: 3}
+  m_PrefabInstance: {fileID: 5340238864770224279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1398872670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398872669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837bd744b00b1484abfc4f2639052ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stackHolder: {fileID: 1448798705}
+  timeToMove: 1.5
+  bricks: []
+  myTag: 
+  brickOffsetY: 0.3
+  brickOffsetZ: 0
 --- !u!1001 &1408780494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3432,6 +3415,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 1, z: 0.8}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1448798705 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8444076084788760440, guid: 603f89835972d08448f71899def2caac, type: 3}
+  m_PrefabInstance: {fileID: 5340238864770224279}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1463841035
 GameObject:
   m_ObjectHideFlags: 0
@@ -3791,15 +3779,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_13
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3811,7 +3803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.249998
+      value: 4.099998
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3843,7 +3835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -4150,15 +4142,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_5
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4170,7 +4166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.84
+      value: 1.6900002
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4202,7 +4198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -4211,15 +4207,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4231,7 +4231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5400006
+      value: 1.3900009
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4263,7 +4263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -4272,15 +4272,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_20
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4292,7 +4296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.219999
+      value: 6.069999
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4324,7 +4328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -4378,15 +4382,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_15
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4398,7 +4406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.8499985
+      value: 4.6999984
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4430,7 +4438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -4529,15 +4537,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_11
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4549,7 +4561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.659998
+      value: 3.5099978
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4581,7 +4593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -4680,15 +4692,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_16
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4700,7 +4716,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.0299983
+      value: 4.8799987
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4732,7 +4748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -4786,15 +4802,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 950980166}
+    m_TransformParent: {fileID: 1448798705}
     m_Modifications:
     - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_Name
       value: Blue Brick_21
       objectReference: {fileID: 0}
+    - target: {fileID: 4368086326754704924, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4806,7 +4826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.5199986
+      value: 6.3699985
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704928, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4838,7 +4858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4368086326754704930, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
       propertyPath: colorType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f021135f99c41942e83bee5fd94b, type: 3}
@@ -5137,11 +5157,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 69255948, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 69255948, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.3
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 69255948, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5169,7 +5189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1694070888, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: timeToMove
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1694070888, guid: dff74931f481cae4f9cd99fd9d28e75d, type: 3}
       propertyPath: firstStackPoint
@@ -5256,6 +5276,22 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3354461727045605319, guid: 603f89835972d08448f71899def2caac, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7188238
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354461727045605319, guid: 603f89835972d08448f71899def2caac, type: 3}
+      propertyPath: m_Size.z
+      value: 0.47904682
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354461727045605319, guid: 603f89835972d08448f71899def2caac, type: 3}
+      propertyPath: m_Center.y
+      value: 0.29910767
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354461727045605319, guid: 603f89835972d08448f71899def2caac, type: 3}
+      propertyPath: m_Center.z
+      value: -0.30274725
+      objectReference: {fileID: 0}
     - target: {fileID: 5191943406349623113, guid: 603f89835972d08448f71899def2caac, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -5306,7 +5342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5460670817105419450, guid: 603f89835972d08448f71899def2caac, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5460670817105419450, guid: 603f89835972d08448f71899def2caac, type: 3}
       propertyPath: m_TagString
@@ -5333,10 +5369,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 212485715, guid: c3d65c9e12533624bb2daa6016f4f9ed, type: 3}
-      propertyPath: _rotateSpeed
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 2382660903701666119, guid: c3d65c9e12533624bb2daa6016f4f9ed, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -5385,17 +5417,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2382660904176894163, guid: c3d65c9e12533624bb2daa6016f4f9ed, type: 3}
-      propertyPath: _joystick
-      value: 
-      objectReference: {fileID: 900559085}
-    - target: {fileID: 2382660904176894164, guid: c3d65c9e12533624bb2daa6016f4f9ed, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2382660904176894167, guid: c3d65c9e12533624bb2daa6016f4f9ed, type: 3}
-      propertyPath: m_Constraints
-      value: 80
+    - target: {fileID: 2382660904176894161, guid: c3d65c9e12533624bb2daa6016f4f9ed, type: 3}
+      propertyPath: timeToMove
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3d65c9e12533624bb2daa6016f4f9ed, type: 3}

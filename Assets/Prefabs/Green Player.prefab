@@ -144,7 +144,6 @@ GameObject:
   - component: {fileID: 2837488215452147844}
   - component: {fileID: 2837488215915665080}
   - component: {fileID: 2837488215915665083}
-  - component: {fileID: 2837488215915665084}
   - component: {fileID: 2837488215915665087}
   - component: {fileID: 2837488215915665086}
   - component: {fileID: 2837488215915665073}
@@ -224,21 +223,6 @@ CapsuleCollider:
   m_Height: 2.662289
   m_Direction: 1
   m_Center: {x: 0, y: 1.2225491, z: 0.04553345}
---- !u!114 &2837488215915665084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2837488215461499656}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9320f468934761043b204c16ff049af9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _joystick: {fileID: 0}
-  _moveSpeed: 5
-  _rotateSpeed: 5
 --- !u!114 &2837488215915665087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stackHolder: {fileID: 2837488217022891083}
-  timeToMove: 0.1
+  timeToMove: 0.3
   bricks: []
   myTag: Green
 --- !u!114 &2837488215915665073
@@ -293,7 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 5
-  _rotateSpeed: 20
+  _rotateSpeed: 6
 --- !u!1 &2837488215461499658
 GameObject:
   m_ObjectHideFlags: 0
