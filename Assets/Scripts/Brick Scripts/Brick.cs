@@ -18,6 +18,10 @@ public class Brick : MonoBehaviour
         
     }
 
+    public void StairScale()
+    {
+        transform.DOScale(new Vector3(2.5f,0.3f,0.3f),0.1f).SetEase(Ease.OutBounce);
+    }
     public void MoveTo(Vector3 dest,float timeToMove)
     {
         transform.DOMove(dest,timeToMove)
