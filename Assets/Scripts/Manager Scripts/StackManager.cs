@@ -34,7 +34,7 @@ public class StackManager : MonoBehaviour
             Brick brick = bricks[index];
             brick.GetComponent<BoxCollider>().isTrigger = false;
             bricks.Remove(bricks[index]);
-            targetStairPos = new Vector3(0,0.2f+stairOffsetY,stairOffsetZ -0.15f);
+            
 
             brick.transform.parent = stairStackHolder;
             brick.transform.localPosition = stairTrigger.transform.localPosition;
@@ -46,6 +46,7 @@ public class StackManager : MonoBehaviour
             // brick.GetComponent<Brick>().MoveTo(targetStairPos,0.1f);
             stairOffsetY += 0.3f;
             stairOffsetZ += 0.3f;
+            targetStairPos = new Vector3(0,0.2f+stairOffsetY,stairOffsetZ -0.15f);
             stairTrigger.transform.localPosition = targetStairPos;
             
             index--;
