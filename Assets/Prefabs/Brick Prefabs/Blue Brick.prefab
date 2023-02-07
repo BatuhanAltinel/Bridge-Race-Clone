@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4368086326754704928}
   - component: {fileID: 4368086326754704927}
   - component: {fileID: 4368086326754704926}
-  - component: {fileID: 4368086326754704925}
   - component: {fileID: 4368086326754704930}
   - component: {fileID: 4368086326754704931}
+  - component: {fileID: 2325606233876899529}
   m_Layer: 0
   m_Name: Blue Brick
   m_TagString: Blue
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &4368086326754704925
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4368086326754704924}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 2.8
-  m_Height: 2.4
-  m_Direction: 0
-  m_Center: {x: 0.036940992, y: 0, z: 0.11487106}
 --- !u!114 &4368086326754704930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,3 +112,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnedPosition: {x: 0, y: 0, z: 0}
+--- !u!65 &2325606233876899529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4368086326754704924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
