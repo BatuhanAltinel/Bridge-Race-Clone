@@ -8,7 +8,9 @@ public class ColorEnum : MonoBehaviour
     {
         Blue = 0,
         Red = 1,
-        Green =2
+        Green =2,
+        
+        Empty = 3
     }
 
     public ColorType colorType;

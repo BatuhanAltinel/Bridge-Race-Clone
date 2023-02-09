@@ -11,6 +11,11 @@ public class Brick : MonoBehaviour
        spawnedPosition = pos;
     }
 
+    public void GotoFirstPosition()
+    {
+        transform.position = spawnedPosition;
+    }
+
     public void BrickBouncing()
     {
         transform.DOScale(new Vector3(1.3f,0.5f,0.5f),0.2f).SetEase(Ease.InOutBounce).

@@ -6,23 +6,30 @@ using UnityEngine;
 public class StackManager : MonoBehaviour
 {
     public Transform playerStackHolder;
-    public Transform stairStackHolder;
-    public GameObject stairTrigger;
+    Transform stairStackHolder;
+    GameObject stairTrigger;
     Vector3 lastBrickPos;
-     Vector3 targetStairPos;
+    Vector3 targetStairPos;
     int brickIndex = 0;
     [SerializeField] float timeToMove = 1.5f;
     [HideInInspector] public List<Brick> bricks = new();
     public float brickOffsetY = 0.3f;
 
-    public float stairOffsetZ = 0;
-    public float stairOffsetY = 0;
+    public float stairOffsetZ;
+    public float stairOffsetY;
     
     void OnTriggerEnter(Collider other)
     {
         BrickStacking(other);
-        if(other.CompareTag("Stair"))
-            BrickToStair();
+        // if(other.CompareTag("Stair"))
+        // {
+        //     stairTrigger = other.gameObject;
+        //     stairStackHolder = other.gameObject.GetComponentInParent<StairStates>().stairStackHolder.transform;
+        //     // stairOffsetZ = other.gameObject.GetComponentInParent<StairStates>().stairOffsetZ;
+        //     // stairOffsetY = other.gameObject.GetComponentInParent<StairStates>().stairOffsetY;
+        //     BrickToStair();
+        // }
+            
     }
 
     private void BrickToStair()
@@ -32,7 +39,7 @@ public class StackManager : MonoBehaviour
         if(index >= 0)
         {
             Brick brick = bricks[index];
-            brick.GetComponent<BoxCollider>().isTrigger = false;
+            brick.GetComponent<CapsuleCollider>().isTrigger = false;
             bricks.Remove(bricks[index]);
             
 
@@ -41,12 +48,12 @@ public class StackManager : MonoBehaviour
             brick.transform.localRotation = Quaternion.identity;
 
             
-            brick.GetComponent<BoxCollider>().size = new Vector3(1,1,1);
+            brick.GetComponent<CapsuleCollider>().height = 2;
             brick.GetComponent<Brick>().StairScale();
-            // brick.GetComponent<Brick>().MoveTo(targetStairPos,0.1f);
+            
             stairOffsetY += 0.3f;
             stairOffsetZ += 0.3f;
-            targetStairPos = new Vector3(0,0.2f+stairOffsetY,stairOffsetZ -0.15f);
+            targetStairPos = new Vector3(stairTrigger.transform.localPosition.x,0.2f + stairOffsetY,stairOffsetZ - 0.15f);
             stairTrigger.transform.localPosition = targetStairPos;
             
             index--;
@@ -73,7 +80,7 @@ public class StackManager : MonoBehaviour
                     lastBrickPos.y += (bricks.Count-1) * brickOffsetY;
                     brick.MoveTo(lastBrickPos, timeToMove);
 
-                    Debug.Log(nameof(bricks) + " list Count: " + bricks.Count);
+                    // Debug.Log(nameof(bricks) + " list Count: " + bricks.Count);
                     brickIndex++;
                     }
                     

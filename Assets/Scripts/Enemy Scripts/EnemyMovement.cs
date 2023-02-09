@@ -64,8 +64,8 @@ public class EnemyMovement : MonoBehaviour
         if(transform.position.z < -13)
         _rb.AddForce(new Vector3(0,0,1) * impulseForce *Time.deltaTime,ForceMode.Impulse);
             // randomZ = 1;
-        if(transform.position.z > 13)
-        _rb.AddForce(new Vector3(0,0,-1) * impulseForce *Time.deltaTime,ForceMode.Impulse);
+        // if(transform.position.z > 13)
+        // _rb.AddForce(new Vector3(0,0,-1) * impulseForce *Time.deltaTime,ForceMode.Impulse);
             // randomZ = -1;
     }
     void OnTriggerEnter(Collider other)
