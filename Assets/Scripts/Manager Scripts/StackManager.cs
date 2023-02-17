@@ -20,45 +20,7 @@ public class StackManager : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        BrickStacking(other);
-        // if(other.CompareTag("Stair"))
-        // {
-        //     stairTrigger = other.gameObject;
-        //     stairStackHolder = other.gameObject.GetComponentInParent<StairStates>().stairStackHolder.transform;
-        //     // stairOffsetZ = other.gameObject.GetComponentInParent<StairStates>().stairOffsetZ;
-        //     // stairOffsetY = other.gameObject.GetComponentInParent<StairStates>().stairOffsetY;
-        //     BrickToStair();
-        // }
-            
-    }
-
-    private void BrickToStair()
-    {
-        
-        int index = bricks.Count -1;
-        if(index >= 0)
-        {
-            Brick brick = bricks[index];
-            brick.GetComponent<CapsuleCollider>().isTrigger = false;
-            bricks.Remove(bricks[index]);
-            
-
-            brick.transform.parent = stairStackHolder;
-            brick.transform.localPosition = stairTrigger.transform.localPosition;
-            brick.transform.localRotation = Quaternion.identity;
-
-            
-            brick.GetComponent<CapsuleCollider>().height = 2;
-            brick.GetComponent<Brick>().StairScale();
-            
-            stairOffsetY += 0.3f;
-            stairOffsetZ += 0.3f;
-            targetStairPos = new Vector3(stairTrigger.transform.localPosition.x,0.2f + stairOffsetY,stairOffsetZ - 0.15f);
-            stairTrigger.transform.localPosition = targetStairPos;
-            
-            index--;
-        }
-        
+        BrickStacking(other);           
     }
 
     private void BrickStacking(Collider other)
@@ -72,6 +34,8 @@ public class StackManager : MonoBehaviour
                     bricks = GameManager.instace.SetTheBrickList(PcolorEnum);
                     bricks.Add(brick);
 
+                    brick.GetComponent<CapsuleCollider>().height = 1;
+
                     other.gameObject.transform.parent = this.playerStackHolder.transform;
                     lastBrickPos = this.playerStackHolder.transform.position;
 
@@ -79,14 +43,42 @@ public class StackManager : MonoBehaviour
 
                     lastBrickPos.y += (bricks.Count-1) * brickOffsetY;
                     brick.MoveTo(lastBrickPos, timeToMove);
-
-                    // Debug.Log(nameof(bricks) + " list Count: " + bricks.Count);
-                    brickIndex++;
-                    }
                     
-                }   
-            } 
-        }
+                    brickIndex++;
+                }
+                    
+            }   
+        } 
     }
+
+        // private void BrickToStair()
+        // {
+            
+        //     int index = bricks.Count -1;
+        //     if(index >= 0)
+        //     {
+        //         Brick brick = bricks[index];
+        //         brick.GetComponent<CapsuleCollider>().isTrigger = false;
+        //         bricks.Remove(bricks[index]);
+                
+
+        //         brick.transform.parent = stairStackHolder;
+        //         brick.transform.localPosition = stairTrigger.transform.localPosition;
+        //         brick.transform.localRotation = Quaternion.identity;
+
+                
+        //         brick.GetComponent<CapsuleCollider>().height = 2;
+        //         brick.GetComponent<Brick>().StairScale();
+                
+        //         stairOffsetY += 0.3f;
+        //         stairOffsetZ += 0.3f;
+        //         targetStairPos = new Vector3(stairTrigger.transform.localPosition.x,0.2f + stairOffsetY,stairOffsetZ - 0.15f);
+        //         stairTrigger.transform.localPosition = targetStairPos;
+                
+        //         index--;
+        //     }
+            
+        // }
+}
 
 
